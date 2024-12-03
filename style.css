@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #6a11cb, #2575fc);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #21063f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links  ul li{
+  text-decoration: none;
+}
+
+.nav-links a,
+.contact-btn {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.contact-btn {
+  background: linear-gradient(to right, #8e44ad, #351157);
+}
+
+.contact-btn:hover {
+  background: linear-gradient(to right, #3498db, #8e44ad);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 200px 20px;
+  background-size: cover;
+  color: white;
+}
+
+.hero-btn {
+  padding: 10px 30px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #8e44ad, #3498db);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#events {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+
+  padding-top: 20px;
+  margin-top: 20px;
+
+}
+
+.card {
+  flex: 0 0 18rem; /* Ensures each card is 18rem wide */
+  border: 2px solid #8a2be2; /* Purple theme */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 12rem; /* Fixed height for consistency */
+  object-fit: cover;
+  border-bottom: 2px solid #8a2be2; /* Matches theme */
+}
+
+.card-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  color: plum;
+  background-color: none;
+  text-decoration: none;
+}
+
+.btn {
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  color: antiquewhite;
+}
+
+#events:hover .card {
+  animation: slide 3s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+/* Carousel */
+.carousel-container img {
+ 
+  width: 100px;
+  transition: transform 0.3s;
+}
+.carousel-container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.carousel-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Partners Section */
+.partners {
+  background: linear-gradient(to right, #8e44ad, #3498db);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.partner-carousel {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+/* Steps Section */
+.steps {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.steps-cards {
+  display: flex;
+  gap: 20px;
+}
+
+/* Competitions Section */
+.competitions {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.competition-cards {
+  display: flex;
+  gap: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #6a11cb;
+  text-align: center;
+}
